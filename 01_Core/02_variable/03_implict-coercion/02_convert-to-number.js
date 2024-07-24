@@ -17,7 +17,7 @@ console.log(10>'5');
 console.log(+''); // 0
 console.log(+'1'); // 1
 console.log(+'javascript'); //NaN
-console.log(+true;/ //1
+console.log(+true);/ //1
 console.log(+null); //(+undefined) //NaN
 console.log(+{}); // NaN
 console.log(+[]); // 0

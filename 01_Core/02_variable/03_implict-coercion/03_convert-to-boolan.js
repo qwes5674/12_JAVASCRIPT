@@ -1,12 +1,20 @@
-//1. Boolean 생성자 함수를 new 연산자 없이 호출하는 방법
-console.log(Boolean('JavaScript'));  //true
-console.log(new Boolean('JavaScript'));  //[Boolean: true]
-console.log(Boolean(''));                   // false
-console.log(Boolean(1));                    // true
-console.log(Boolean(0));                    // false
-console.log(Boolean(NaN));                  // false
-console.log(Boolean(Infinity));             // true
-console.log(Boolean(null));                 // false
-console.log(Boolean(undefined));            // false
-console.log(Boolean({}));                   // true
-console.log(Boolean([]));                   // true
+// 암묵적 형변환
+
+/* 
+자바스크립트 엔진은 boolean 타입이 아닌 값들을 
+Truthy 값 (참으로 평가되는 값)
+Falsy 값(거짓으로 평가되는 값)
+으로 구분된다.
+*/
+
+// 'JavaScript -> Truthy 값이기 떄문에 true로 형변환 된것
+if('javascript'){
+    console.log("if('JavaScript')");
+}
+if(true) console.log("if(true)");
+if(false) console.log("if(false");
+if(undefined) console.log("if(undefined)");
+if(null) console.log("if(null");
+if(0) console.log("if(0)");
+if(NaN) console.log("if(Nan)");
+if('') console.log("if('')");
