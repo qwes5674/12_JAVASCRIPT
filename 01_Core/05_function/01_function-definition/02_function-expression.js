@@ -18,3 +18,4 @@ var clac = function add(a,b){
 // 함수표현식을 사용할 때는 호출은 식별자로만 이루어진다.
 console.log(clac(10,20)); // 식별자로 호출 가능
 console.log(add(10,20)); // add is not defined -> 함수명으로는 호출 불가
+

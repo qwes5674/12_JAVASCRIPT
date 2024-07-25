@@ -36,7 +36,7 @@ console.log(`Number.isNaN(NaN) : ${Number.isNaN(NaN)}`); // true
 // 비교 연산자를 통해 문자열끼리 비교도 가능, 유니코드 순으로 비교한다.
 
 // 대소비교연산자
-console.log(`'apple' < 'banana' : ${'apple' < 'banana'}`);
-console.log(`'apple' > 'banana' : ${'apple' > 'banana'}`);
-console.log(`'cat' < 'Zoo' : ${'cat' < 'Zoo'}`);
-console.log(`'cat' > 'Zoo' : ${'cat' > 'Zoo'}`);
+console.log(`'apple' < 'banana' : ${'apple' < 'banana'}`); // true
+console.log(`'apple' > 'banana' : ${'apple' > 'banana'}`); // false
+console.log(`'cat' < 'Zoo' : ${'cat' < 'Zoo'}`); // false
+console.log(`'cat' > 'Zoo' : ${'cat' > 'Zoo'}`); // true // 대문자가 소문자보다 작다

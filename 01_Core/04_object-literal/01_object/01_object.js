@@ -34,3 +34,20 @@ var student = {
 
 console.log(typeof student);
 console.log(student);
+
+// 프로퍼티를 정의하지 않을시 빈 객체가 생성된다.
+var student2 = {};
+console.log(typeof student2);
+console.log(student2);
+
+var name = '이름';
+
+/* 
+객체 리터럴의 닫는 중괄호 뒤에는 세미콜론을 작성해야 한다.
+숫자, 문자열과 비슷하게 리터럴로 객체를 생성한다.
+리터럴에 프로퍼티를 포함시켜 객체를 생성함과 동시에 프로퍼티를 만들 수도 있고,
+객체를 생성한 이후에 동적으로 넣을 수도 있다.
+*/
+
+
+

@@ -20,3 +20,5 @@ function outer(){
 }
 
 outer();
+
+//inner(); // inner is not defined

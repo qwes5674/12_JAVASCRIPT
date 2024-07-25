@@ -18,3 +18,6 @@ if(null) console.log("if(null");
 if(0) console.log("if(0)");
 if(NaN) console.log("if(Nan)");
 if('') console.log("if('')");
+
+//false, undefined, null, 0, Nan, ''(빈문자열) => Falsy 값
+// 이외 모든 값은 Truthy 값이다.

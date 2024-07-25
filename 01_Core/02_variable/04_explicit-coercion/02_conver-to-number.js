@@ -9,5 +9,5 @@ console.log('======== parse 이용 =========');
 // 2. parseInt, parseFloat 함수 이용 (문자열 -> 숫자)
 console.log(parseInt('10'));
 console.log(parseFloat('10'));
-console.log(parseInt('10.01'));
+console.log(parseInt('10.01')); //10
 console.log(parseFloat('10.01'));

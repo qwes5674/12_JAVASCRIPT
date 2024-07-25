@@ -16,6 +16,9 @@ console.log(false || 'banana'); // banana
 
 // null 또는 undefined가 아닌지 확인하고 프로퍼티를 참조할 때
 var obj = null;
-//var val = obj.value; //Cannot read properties of null (reading 'value')
+var val = obj.value; //Cannot read properties of null (reading 'value')
 
+// null -> falsy-> false -> && 연산으로 사용
+// obj 가 Falsy(null, undefine) 값이면 좌항만 실행하여 val -> null
+// obj 가 truthy 값이면 val -> obj.value
 var val = obj && obj.value;

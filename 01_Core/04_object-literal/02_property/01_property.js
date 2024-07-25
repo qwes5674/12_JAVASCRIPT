@@ -24,12 +24,19 @@
 
 var obj = {
     normal : 'normal value',
-    '@ s p a c e @' : 'space value',
-    '' : '',
+    '@ s p a c e @' : 'space value', // 특수기호를 사용하는 경우, ''따옴표를 써야 함
+    '' : '', // 빈 문자열 키도 오류를 발생시키진 않지만, 권장되지 않음.
     0 : 1, // 숫자 키는 내부적으로 문자열로 변환되어 적용된다.
     var : 'var',
-    normal : 'new Value'
+    normal : 'new Value' // 존재하는 키를 중복해서 선언하면 나중에 선언된 프로퍼티 적용
 };
 
 console.log(obj);
 
+// 프로퍼티 키 동적 생성
+
+var key = 'test';
+
+obj[key] = 'test value';
+
+console.log(obj);
