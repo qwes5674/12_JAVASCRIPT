@@ -25,7 +25,7 @@
 // 3. 매개변수 이름의 중복
 (function(){
     
-    'use strict'
+    //'use strict'
 
     function test(x, x){
         return x - x;

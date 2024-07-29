@@ -27,6 +27,7 @@ function student(name, age){
     }
 }
 
+// 인스턴스 생성
 const student3 = new student('장보고',30);
 const student4 = new student('심사임당',40);
 

@@ -7,6 +7,7 @@ console.log(/^http +|https/.test(url));
 
 // 2. 파일명을 통해 JavaScript 확장자인지 검사하세요
 const fileName = 'test.js';
+console.clear
 
 // 3. 아이디로 사용 가능한지 검사
 // 조건 알파벳 대소문자 또는 숫자로 시작하고 끝나며 6~12 자리인지 검사
