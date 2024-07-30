@@ -22,5 +22,31 @@
     </pre>
 
     <button onclick="alert('클릭했네?'); console.log('클릭했네?');")> 클릭해보세요</button>
+    <button onmouseover="hello('수강생');"> 마우스를 올려보세요</button>
+
+    <script>
+        function hello(name){
+            alert(`${name}씨, 마우스를 올리지 마세요!`);
+        }
+
+        // 핸들러 어트리뷰트 값은 사실 암묵적으로 생성될 이벤트 핸들러의
+        // 함수 몸체를 의미한다.
+
+        function onclick(event){
+            alert('클릭했네?');
+            console.log('클릭했네?');
+            
+        }
+
+        /*
+        참고
+        이벤트 핸들러 어트리뷰트 방식은 오래 된 코드에서 사용되어 알아둘 필요는 있지만 더는 사용하지 않는 것이 좋다.
+        HTML과 자바스크립트의 관심사가 다르므로 dfdffd분리하는 것이 좋다. 
+        하지만 CBD(Component Based Development) 방식의 Angular/React/Vue.js 같은 프레임워크/라이브러리에서는 이벤트 핸들러
+        어트리뷰트 방식으로 이벤트를 처리한다. CBD에서는 HTML, CSS, 자바스크립트를 뷰를 구성하기 위한 구성요소로 보기에
+        관심사가 다르다고 생각하지 않는다. 
+        */
+
+    </script>
 </body>
 </html>
