@@ -34,5 +34,18 @@
         <li>콜라</li>
         <li>우유</li>
     </ul>
+
+    <script>
+        const $drink = document.getElementById('drink');
+
+        $drink.addEventListener('click', e =>{
+            if(e.target.matches('li'))
+            highlight(e.target);
+        })
+
+        function highlight(li){
+            li.classList.toggle('highlight');
+        }
+    </script>
 </body>
 </html>
